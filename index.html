@@ -1,17 +1,2268 @@
+
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="es" class="scroll-smooth"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwMDQ4MTk4MjMxNTA2NjkyMjM0NCIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2JiZGM3ZWUyY2FiOTFiZGRfaW5kZXguaHRtbC01NDkifSwiZXhwIjoxNzkyNjMxNzUyLCJpYXQiOjE3OTI2MjgxNTIsImFsZyI6IlJTMjU2In0.WXxaIk1dZ3Md2e0hZLei_htrIdLsv7gTfjj-PzHZ4lmf5oxcyVnrZIh5KEV1Wr8Mv-Bx9kx43bNzTcmBBhoxwC03mJMlO_3f9c-1ySFdfc0dXEklwUBnK-QXBhY8_4pPI2MQWSfcRe04sMZlCvXU8KQxGpTFWeCH2ysTennbIZbTuLpDutQsw5oSTyNGIOKTv5pkXgiI5HRyW7WBgWu_US2Di3y8HsGNlbru2UQME0uhHhO58O8YYaSrDFQy1XcmFAJ8wnHLv3OHBk2SN7y1X-rtJohQ2xfiat9hqms58PM3UbQAITIdRz_0jg_RDP_lVXbH1JoTXgNi7vFoLZCFmQ","c_bbdc7ee2cab91bdd_index.html-549")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var c=n;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&h(c,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(d){return a.next(d)}function c(d){return a.throw(d)}return new Promise(function(d,e){function f(g){g.done?d(g.value):Promise.resolve(g.value).then(b,c).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push(b[d]);return c}});p("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var c=a.style;b.backgroundColor&&(c.backgroundColor=b.backgroundColor);b.width&&(c.width=`${b.width}px`);b.height&&(c.height=`${b.height}px`);var d=b.style;d!=null&&Object.keys(d).forEach(e=>{c[e]=d[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let c=0,d=a.length;c<d;c++)b.push(a[c]);return b}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var c;if(!(c=b.width)){c=z(a,"border-left-width");var d=z(a,"border-right-width");c=a.clientWidth+c+d}(b=b.height)||(b=z(a,"border-top-width"),d=z(a,"border-bottom-width"),b=a.clientHeight+b+d);return{width:c,height:b}}function B(a){return new Promise((b,c)=>{var d=new Image;d.onload=()=>{d.decode().then(()=>{requestAnimationFrame(()=>b(d))})};d.onerror=c;d.crossOrigin="anonymous";d.decoding="async";d.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,c){return t(function*(){var d=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");d.setAttribute("width",`${b}`);d.setAttribute("height",`${c}`);d.setAttribute("viewBox",`0 0 ${b} ${c}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");d.appendChild(e);e.appendChild(a);return C(d)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(c=>{var d=a.getPropertyValue(c),e=a.getPropertyPriority(c);return`${c}: ${d}${e?" !important":""};`}).join(" ")}
+function G(a,b,c,d){a=window.getComputedStyle(a,c);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;c=`.${f}:${c}`;a.cssText?(d=a.getPropertyValue("content"),d=`${a.cssText} content: '${d.replace(/'|"/g,"")}';`):d=F(a,d);g.call(e,document.createTextNode(`${c}{${d}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,c){return t(function*(){var d=yield fetch(a,b);if(d.status===404)throw Error(`Resource "${d.url}" not found`);var e=yield d.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(c({v:d,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function aa(a,b,c){var d=a.replace(/\?.*/,"");c&&(d=a);/ttf|otf|eot|woff2?/i.test(d)&&(d=d.replace(/.*\//,""));return b?`[${b}]${d}`:d}
+function K(a,b,c){return t(function*(){var d=aa(a,b,c.F);if(J[d]!=null)return J[d];c.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,c.l,({v:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=c.o||""}return J[d]=e})};const L={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function M(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ba(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function ca(a,b){return t(function*(){if(a.currentSrc){var c=document.createElement("canvas");let d=c.getContext("2d");c.width=a.clientWidth;c.height=a.clientHeight;d==null||d.drawImage(a,0,0,c.width,c.height);c=c.toDataURL();return B(c)}c=a.poster;c=yield K(c,L[M(c).toLowerCase()]||"",b);return B(c)})}
+function da(a,b){return t(function*(){try{let c;if(a==null?0:(c=a.contentDocument)==null?0:c.body)return yield N(a.contentDocument.body,b,!0)}catch(c){}return a.cloneNode(!1)})}function ea(a,b){return t(function*(){return E(a,HTMLCanvasElement)?ba(a):E(a,HTMLVideoElement)?ca(a,b):E(a,HTMLIFrameElement)?da(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function fa(a,b,c){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var d=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)d=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))d=w(a.contentDocument.body.childNodes);else{let f;d=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(d.length===0||E(a,HTMLVideoElement))return b;yield d.reduce((e,f)=>e.then(()=>N(f,c)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ha(a,b,c){var d=b.style;if(d){var e=window.getComputedStyle(a);e.cssText?(d.cssText=e.cssText,d.transformOrigin=e.transformOrigin):y(c).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);d.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ia(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(c=>a.value===c.getAttribute("value")))&&b.setAttribute("selected","")}
+function ja(a,b){return t(function*(){var c=a.querySelectorAll?a.querySelectorAll("use"):[];if(c.length===0)return a;var d={};for(var e=0;e<c.length;e++){var f=c[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||d[f]||(d[f]=yield N(g,b,!0))}}c=Object.values(d);if(c.length){d=document.createElementNS("http://www.w3.org/1999/xhtml","svg");d.setAttribute("xmlns","http://www.w3.org/1999/xhtml");d.style.position="absolute";d.style.width="0";d.style.height="0";
+d.style.overflow="hidden";d.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");d.appendChild(e);for(f=0;f<c.length;f++)e.appendChild(c[f]);a.appendChild(d)}return a})}
+function N(a,b,c){return t(function*(){return c||!b.filter||b.filter(a)?Promise.resolve(a).then(d=>ea(d,b)).then(d=>fa(a,d,b)).then(d=>{E(d,Element)&&(ha(a,d,b),G(a,d,":before",b),G(a,d,":after",b),E(a,HTMLTextAreaElement)&&(d.textContent=a.value),E(a,HTMLInputElement)&&d.setAttribute("value",a.value),ia(a,d));return d}).then(d=>ja(d,b)):null})};const O=/url\((['"]?)([^'"]+?)\1\)/g,ka=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,la=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ma(a){var b=[];a.replace(O,(c,d,e)=>{b.push(e);return c});return b.filter(c=>!H(c))}
+function na(a,b,c,d){return t(function*(){try{let e=c?(new URL(b,c||void 0)).toString():b,f;f=yield K(e,L[M(b).toLowerCase()]||"",d);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function oa(a,{K:b}){return b?a.replace(la,c=>{for(;;){let [d,,e]=ka.exec(c)||[];if(!e)return"";if(e===b)return`src: ${d};`}}):a}
+function P(a,b,c){return t(function*(){if(a.search(O)===-1)return a;var d=oa(a,c);return ma(d).reduce((e,f)=>e.then(g=>na(g,f,b,c)),Promise.resolve(d))})};function Q(a,b,c){return t(function*(){var d,e=(d=b.style)==null?void 0:d.getPropertyValue(a);return e?(d=yield P(e,null,c),b.style.setProperty(a,d,b.style.getPropertyPriority(a)),!0):!1})}function pa(a,b){return t(function*(){(yield Q("background",a,b))||(yield Q("background-image",a,b));(yield Q("mask",a,b))||(yield Q("-webkit-mask",a,b))||(yield Q("mask-image",a,b))||(yield Q("-webkit-mask-image",a,b))})}
+function qa(a,b){return t(function*(){var c=E(a,HTMLImageElement);if(c&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var d=c?a.src:a.href.baseVal,e=yield K(d,L[M(d).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...k)=>{try{f(b.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");c?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function ra(a,b){return t(function*(){var c=w(a.childNodes).map(d=>R(d,b));yield Promise.all(c).then(()=>a)})}function R(a,b){return t(function*(){E(a,Element)&&(yield pa(a,b),yield qa(a,b),yield ra(a,b))})};const S={};function T(a){return t(function*(){var b=S[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return S[a]=b})}function U(a,b){return t(function*(){var c=a.cssText,d=/url\(["']?([^"')]+)["']?\)/g,e=(c.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(d,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.l,({result:k})=>{c=c.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>c)})}
+function V(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var c=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var d=c.exec(a);if(d===null)break;b.push(d[0])}a=a.replace(c,"");c=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(d=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=c.exec(a);if(e===null)if(e=d.exec(a),e===null)break;else c.lastIndex=d.lastIndex;else d.lastIndex=
+c.lastIndex;b.push(e[0])}return b}
+function sa(a,b){return t(function*(){var c=[],d=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=T(f.href).then(m=>U(m,b)).then(m=>V(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Fa){}})).catch(()=>{});d.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&d.push(T(e.href).then(k=>U(k,b)).then(k=>V(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(d).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{c.push(f)})}catch(f){}});return c})})}function ta(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(O)!==-1)}function ua(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var c=yield sa(w(a.ownerDocument.styleSheets),b);return ta(c)})}
+function va(a){function b(d){(d.style.fontFamily||getComputedStyle(d).fontFamily).split(",").forEach(e=>{c.add(e.trim().replace(/["']/g,""))});Array.from(d.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var c=new Set;b(a);return c}function wa(a,b){return t(function*(){var c=yield ua(a,b),d=va(a);return(yield Promise.all(c.filter(e=>d.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>P(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function xa(a,b){return t(function*(){var c=b.m!=null?b.m:b.A?null:yield wa(a,b);if(c){let d=document.createElement("style");d.appendChild(document.createTextNode(c));a.firstChild?a.insertBefore(d,a.firstChild):a.appendChild(d)}})};function ya(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield N(a,b,!0);yield xa(e,b);yield R(e,b);u(e,b);return yield D(e,c,d)})}
+function za(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield ya(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.I||window.devicePixelRatio||1,m=b.j||c,q=b.i||d;f.width=m*k;f.height=q*k;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Aa(a,b={}){return t(function*(){return(yield za(a,b)).toDataURL()})};const Ba=["gemini.google.com","corp.google.com","proxy.googlers.com"];function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var c=document.createElement("canvas");c.width=a;c.height=b;return c.toDataURL("image/png")}const Y=X(1,1);
+function Z(a){return t(function*(){try{return yield Aa(a,{j:a.offsetWidth,i:a.offsetHeight,A:!0,filter:b=>{if(b.tagName==="IMG"){let c=b.getAttribute("src");if(!c||c.trim()===""||b.style.display==="none")return!1}return!0},o:Y,h:()=>Y})}catch(b){return X(a.offsetWidth,a.offsetHeight)}})}
+function Ca(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,c=document.body.cloneNode(!0);c.querySelectorAll('[class*="animate"]').forEach(d=>{d.classList.remove(...Array.from(d.classList).filter(e=>e.startsWith("animate")))});c.style.width=`${a}px`;c.style.height=`${b}px`;return c})}
+function Da(a){return t(function*(){var b=document.body;if(W()){var c=yield Ca();b=c;document.body.appendChild(c)}c=yield Z(b);W()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:c,topOffset:document.documentElement.scrollTop},a.origin)})}function Ea(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(Ba.some(c=>a.origin.includes(c))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Da(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ea(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbería Cortes y Estilos YD</title>
+    <title>Barbería Cortes y Estilos YD | KM27 Carretera Sur, El Crucero</title>
+    <meta name="description" content="Barbería Cortes y Estilos YD en El Crucero, Nicaragua (KM27 Carretera Sur, 2 cuadras arriba camino de Temoa). Cortes Fade, Niños, Barba, Cejas, Facial, Manicure y Pedicure. Reserva al +505 8876 7598.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Librería QRious para generar Códigos QR en Canvas de Alta Resolución -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts: Cinzel (Clásico/Elegante) & Plus Jakarta Sans (Moderno/Limpio) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            950: '#08090c',
+                            900: '#0e1015',
+                            800: '#161922',
+                            700: '#222734',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#d4af37',
+                            600: '#b48a1e',
+                        },
+                        ydblue: {
+                            600: '#2c3e6b',
+                            800: '#1b2642',
+                        },
+                        ydred: {
+                            500: '#b92b27',
+                            600: '#961e1b',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 50px; }
-        h1 { color: #333; }
-        p { color: #666; }
+        body {
+            background-color: #0e1015;
+            color: #f3f4f6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Borde Superior Inspirado en el Poste de Barbero del Logo YD */
+        .barber-pole-border {
+            background: repeating-linear-gradient(
+                45deg,
+                #961e1b,
+                #961e1b 14px,
+                #f8fafc 14px,
+                #f8fafc 28px,
+                #2c3e6b 28px,
+                #2c3e6b 42px,
+                #f8fafc 42px,
+                #f8fafc 56px
+            );
+            height: 5px;
+            width: 100%;
+        }
+
+        /* Texto Dorado Metálico */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Efecto Hover en Tarjetas */
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 32px -10px rgba(212, 175, 55, 0.22);
+            border-color: rgba(212, 175, 55, 0.55);
+        }
+
+        /* Scrollbar Personalizado */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #08090c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2c3e6b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
     </style>
-</head>
-<body>
-    <h1>Barbería Cortes y Estilos YD</h1>
-    <p>Pronto disponible nuestro sitio web oficial. ¡Te esperamos!</p>
-</body>
-</html>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Plus Jakarta Sans, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.-inset-2{inset:-0.5rem}.inset-0{inset:0px}.left-0{left:0px}.right-4{right:1rem}.top-0{top:0px}.top-4{top:1rem}.top-\[52px\]{top:52px}.top-\[5px\]{top:5px}.bottom-4{bottom:1rem}.bottom-5{bottom:1.25rem}.left-4{left:1rem}.right-5{right:1.25rem}.top-3\.5{top:0.875rem}.z-0{z-index:0}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-8{margin-top:2rem;margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-1{margin-right:0.25rem}.mr-1\.5{margin-right:0.375rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-1\.5{margin-top:0.375rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.mb-4{margin-bottom:1rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-80{height:20rem}.h-full{height:100%}.h-11{height:2.75rem}.h-14{height:3.5rem}.h-36{height:9rem}.h-72{height:18rem}.h-9{height:2.25rem}.h-8{height:2rem}.max-h-52{max-height:13rem}.max-h-\[75vh\]{max-height:75vh}.max-h-\[90vh\]{max-height:90vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-full{width:100%}.w-11{width:2.75rem}.w-14{width:3.5rem}.w-9{width:2.25rem}.w-auto{width:auto}.w-8{width:2rem}.max-w-2xl{max-width:42rem}.max-w-7xl{max-width:80rem}.max-w-\[170px\]{max-width:170px}.max-w-md{max-width:28rem}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-xs{max-width:20rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-10{gap:2.5rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-3\.5{gap:0.875rem}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-dark-950{--tw-border-opacity:1;border-color:rgb(8 9 12 / var(--tw-border-opacity, 1))}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-gold-500{--tw-border-opacity:1;border-color:rgb(212 175 55 / var(--tw-border-opacity, 1))}.border-gold-500\/30{border-color:rgb(212 175 55 / 0.3)}.border-pink-500\/30{border-color:rgb(236 72 153 / 0.3)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/15{border-color:rgb(255 255 255 / 0.15)}.border-ydblue-600{--tw-border-opacity:1;border-color:rgb(44 62 107 / var(--tw-border-opacity, 1))}.border-ydblue-600\/50{border-color:rgb(44 62 107 / 0.5)}.border-gold-500\/40{border-color:rgb(212 175 55 / 0.4)}.border-white\/5{border-color:rgb(255 255 255 / 0.05)}.border-ydblue-600\/40{border-color:rgb(44 62 107 / 0.4)}.bg-dark-800{--tw-bg-opacity:1;background-color:rgb(22 25 34 / var(--tw-bg-opacity, 1))}.bg-dark-900\/90{background-color:rgb(14 16 21 / 0.9)}.bg-dark-950{--tw-bg-opacity:1;background-color:rgb(8 9 12 / var(--tw-bg-opacity, 1))}.bg-dark-950\/90{background-color:rgb(8 9 12 / 0.9)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/15{background-color:rgb(16 185 129 / 0.15)}.bg-emerald-700{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.bg-gold-500\/10{background-color:rgb(212 175 55 / 0.1)}.bg-gold-500\/15{background-color:rgb(212 175 55 / 0.15)}.bg-pink-500\/15{background-color:rgb(236 72 153 / 0.15)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-ydblue-600\/30{background-color:rgb(44 62 107 / 0.3)}.bg-ydblue-800\/80{background-color:rgb(27 38 66 / 0.8)}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-black\/85{background-color:rgb(0 0 0 / 0.85)}.bg-black\/90{background-color:rgb(0 0 0 / 0.9)}.bg-dark-800\/80{background-color:rgb(22 25 34 / 0.8)}.bg-dark-900{--tw-bg-opacity:1;background-color:rgb(14 16 21 / var(--tw-bg-opacity, 1))}.bg-dark-950\/60{background-color:rgb(8 9 12 / 0.6)}.bg-dark-950\/70{background-color:rgb(8 9 12 / 0.7)}.bg-dark-950\/80{background-color:rgb(8 9 12 / 0.8)}.bg-emerald-500\/10{background-color:rgb(16 185 129 / 0.1)}.bg-gold-500{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.bg-pink-600\/20{background-color:rgb(219 39 119 / 0.2)}.bg-ydblue-800\/30{background-color:rgb(27 38 66 / 0.3)}.bg-gold-500\/20{background-color:rgb(212 175 55 / 0.2)}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-amber-500{--tw-gradient-from:#f59e0b var(--tw-gradient-from-position);--tw-gradient-to:rgb(245 158 11 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-dark-900{--tw-gradient-from:#0e1015 var(--tw-gradient-from-position);--tw-gradient-to:rgb(14 16 21 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-dark-950{--tw-gradient-from:#08090c var(--tw-gradient-from-position);--tw-gradient-to:rgb(8 9 12 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-gold-500{--tw-gradient-from:#d4af37 var(--tw-gradient-from-position);--tw-gradient-to:rgb(212 175 55 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-gold-500\/30{--tw-gradient-from:rgb(212 175 55 / 0.3) var(--tw-gradient-from-position);--tw-gradient-to:rgb(212 175 55 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-dark-800{--tw-gradient-from:#161922 var(--tw-gradient-from-position);--tw-gradient-to:rgb(22 25 34 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-emerald-500{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 185 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-ydblue-800\/40{--tw-gradient-from:rgb(27 38 66 / 0.4) var(--tw-gradient-from-position);--tw-gradient-to:rgb(27 38 66 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-dark-950\/85{--tw-gradient-to:rgb(8 9 12 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(8 9 12 / 0.85) var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-gold-500{--tw-gradient-to:rgb(212 175 55 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #d4af37 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-ydred-500{--tw-gradient-to:rgb(185 43 39 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #b92b27 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-ydred-500\/20{--tw-gradient-to:rgb(185 43 39 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(185 43 39 / 0.2) var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-dark-800{--tw-gradient-to:rgb(22 25 34 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #161922 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-dark-950\/40{--tw-gradient-to:rgb(8 9 12 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(8 9 12 / 0.4) var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-dark-950\/35{--tw-gradient-to:rgb(8 9 12 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(8 9 12 / 0.35) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-amber-600{--tw-gradient-to:#d97706 var(--tw-gradient-to-position)}.to-dark-950\/90{--tw-gradient-to:rgb(8 9 12 / 0.9) var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.to-ydblue-600{--tw-gradient-to:#2c3e6b var(--tw-gradient-to-position)}.to-ydblue-600\/30{--tw-gradient-to:rgb(44 62 107 / 0.3) var(--tw-gradient-to-position)}.to-dark-900{--tw-gradient-to:#0e1015 var(--tw-gradient-to-position)}.to-dark-950{--tw-gradient-to:#08090c var(--tw-gradient-to-position)}.to-green-600{--tw-gradient-to:#16a34a var(--tw-gradient-to-position)}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.object-center{object-position:center}.object-top{object-position:top}.p-0\.5{padding:0.125rem}.p-1\.5{padding:0.375rem}.p-2\.5{padding:0.625rem}.p-4{padding:1rem}.p-3\.5{padding:0.875rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.pb-16{padding-bottom:4rem}.pb-6{padding-bottom:1.5rem}.pt-2{padding-top:0.5rem}.pt-28{padding-top:7rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.pb-2{padding-bottom:0.5rem}.pb-3\.5{padding-bottom:0.875rem}.pb-4{padding-bottom:1rem}.pl-10{padding-left:2.5rem}.pr-1{padding-right:0.25rem}.pr-4{padding-right:1rem}.pr-8{padding-right:2rem}.pt-1{padding-top:0.25rem}.pt-2\.5{padding-top:0.625rem}.pt-5{padding-top:1.25rem}.pr-20{padding-right:5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-serif{font-family:Cinzel, serif}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-dark-950{--tw-text-opacity:1;color:rgb(8 9 12 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-gold-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-gold-500{--tw-text-opacity:1;color:rgb(212 175 55 / var(--tw-text-opacity, 1))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-pink-400{--tw-text-opacity:1;color:rgb(244 114 182 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-ydred-500{--tw-text-opacity:1;color:rgb(185 43 39 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.placeholder-gray-500::placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128 / var(--tw-placeholder-opacity, 1))}.opacity-20{opacity:0.2}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-gold-500\/20{--tw-shadow-color:rgb(212 175 55 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-500\/40{--tw-shadow-color:rgb(16 185 129 / 0.4);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-600\/25{--tw-shadow-color:rgb(5 150 105 / 0.25);--tw-shadow:var(--tw-shadow-colored)}.blur-xl{--tw-blur:blur(24px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.contrast-125{--tw-contrast:contrast(1.25);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-700{transition-duration:700ms}.duration-500{transition-duration:500ms}.selection\:bg-gold-500 *::selection{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.selection\:text-dark-950 *::selection{--tw-text-opacity:1;color:rgb(8 9 12 / var(--tw-text-opacity, 1))}.selection\:bg-gold-500::selection{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.selection\:text-dark-950::selection{--tw-text-opacity:1;color:rgb(8 9 12 / var(--tw-text-opacity, 1))}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-dark-700:hover{--tw-bg-opacity:1;background-color:rgb(34 39 52 / var(--tw-bg-opacity, 1))}.hover\:bg-dark-800:hover{--tw-bg-opacity:1;background-color:rgb(22 25 34 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-600:hover{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-ydblue-600:hover{--tw-bg-opacity:1;background-color:rgb(44 62 107 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-gold-400:hover{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.hover\:bg-gold-500:hover{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.hover\:bg-pink-600:hover{--tw-bg-opacity:1;background-color:rgb(219 39 119 / var(--tw-bg-opacity, 1))}.hover\:from-gold-400:hover{--tw-gradient-from:#fbbf24 var(--tw-gradient-from-position);--tw-gradient-to:rgb(251 191 36 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-emerald-400:hover{--tw-gradient-from:#34d399 var(--tw-gradient-from-position);--tw-gradient-to:rgb(52 211 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-amber-500:hover{--tw-gradient-to:#f59e0b var(--tw-gradient-to-position)}.hover\:to-green-500:hover{--tw-gradient-to:#22c55e var(--tw-gradient-to-position)}.hover\:text-gold-400:hover{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.hover\:text-dark-950:hover{--tw-text-opacity:1;color:rgb(8 9 12 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:border-gold-500:focus{--tw-border-opacity:1;border-color:rgb(212 175 55 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-gold-500{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:text-gold-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:text-dark-950{--tw-text-opacity:1;color:rgb(8 9 12 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:top-\[48px\]{top:48px}.sm\:inline{display:inline}.sm\:inline-flex{display:inline-flex}.sm\:h-20{height:5rem}.sm\:h-96{height:24rem}.sm\:h-80{height:20rem}.sm\:w-20{width:5rem}.sm\:w-auto{width:auto}.sm\:max-w-none{max-width:none}.sm\:flex-initial{flex:0 1 auto}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:gap-2{gap:0.5rem}.sm\:p-10{padding:2.5rem}.sm\:p-7{padding:1.75rem}.sm\:p-8{padding:2rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:pb-24{padding-bottom:6rem}.md\:pt-36{padding-top:9rem}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:mx-0{margin-left:0px;margin-right:0px}.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:max-w-none{max-width:none}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-end{align-items:flex-end}.lg\:justify-start{justify-content:flex-start}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-left{text-align:left}.lg\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width: 1280px){.xl\:inline{display:inline}}</style></head>
+<body class="selection:bg-gold-500 selection:text-dark-950">
+
+    <!-- BARRA ESPECIAL PARA EL PROPIETARIO (DESCARGAR INDEX.HTML Y QR FÁCILMENTE) -->
+    <!-- Esta barra se oculta automáticamente en el archivo descargado para que tus clientes no la vean -->
+    
+
+    <!-- Línea Tricolor de Barbería Fija Arriba -->
+    <div class="barber-pole-border fixed top-0 left-0 z-50"></div>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <header id="main-navbar" class="fixed left-0 w-full z-40 bg-dark-950/90 backdrop-blur-md border-b border-white/10 transition-all top-[5px]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo Oficial YD -->
+            <a href="#inicio" class="flex items-center gap-3 group">
+                <div class="w-13 h-13 rounded-full p-0.5 bg-gradient-to-tr from-gold-500 via-ydred-500 to-ydblue-600 shadow-lg shadow-gold-500/20 shrink-0">
+                    <img src="https://placehold.co/100x100/2c3e6b/ffffff?text=YD" alt="Logo Oficial Barbería Cortes y Estilos YD" class="w-12 h-12 rounded-full object-cover bg-white" onerror="this.src='https://placehold.co/100x100/2c3e6b/ffffff?text=YD'">
+                </div>
+                <div>
+                    <span class="block font-serif font-extrabold text-sm sm:text-lg tracking-wider text-white group-hover:text-gold-400 transition-colors">
+                        CORTES Y ESTILOS <span class="text-gold-500">YD</span>
+                    </span>
+                    <span class="block text-[11px] text-gray-400 flex items-center gap-1.5">
+                        <i class="fa-solid fa-location-dot text-ydred-500"></i>
+                        <span class="truncate max-w-[170px] sm:max-w-none">KM27 Carretera Sur, El Crucero</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Enlaces Escritorio -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-300">
+                <a href="#inicio" class="hover:text-gold-400 transition-colors">Inicio</a>
+                <a href="#galeria" class="hover:text-gold-400 transition-colors">Fotos Reales</a>
+                <a href="#servicios" class="hover:text-gold-400 transition-colors">Servicios</a>
+                <a href="#reservar" class="hover:text-gold-400 transition-colors">Agendar Cita</a>
+                <a href="#codigo-qr" class="hover:text-gold-400 transition-colors flex items-center gap-1.5 text-gold-400">
+                    <i class="fa-solid fa-qrcode"></i> Código QR
+                </a>
+                <a href="#ubicacion" class="hover:text-gold-400 transition-colors">Ubicación</a>
+            </nav>
+
+            <!-- Botones Derecha -->
+            <div class="flex items-center gap-2.5">
+                <button onclick="toggleAdminModal(true)" title="Cómo actualizar el sitio / Editar datos" class="hidden sm:inline-flex items-center gap-1.5 bg-dark-800 hover:bg-dark-700 text-gray-200 border border-white/15 text-xs font-semibold px-3.5 py-2.5 rounded-xl transition-all">
+                    <i class="fa-solid fa-pen-to-square text-gold-400"></i>
+                    <span class="hidden xl:inline">Actualizar Sitio</span>
+                </button>
+
+                <a href="#reservar" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 hover:to-amber-500 text-dark-950 font-extrabold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-lg shadow-gold-500/20 transition-all">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>(505) 8876-7598</span>
+                </a>
+
+                <button id="mobile-menu-btn" aria-label="Abrir Menú" class="lg:hidden p-2.5 rounded-xl bg-dark-800 border border-white/10 text-gray-200 hover:text-gold-400">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-dark-950 border-b border-white/10 px-4 pt-3 pb-6 space-y-2.5">
+            <a href="#inicio" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Inicio</a>
+            <a href="#galeria" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Galería de Fotos Reales</a>
+            <a href="#servicios" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Servicios y Precios</a>
+            <a href="#reservar" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Agendar Cita</a>
+            <a href="#codigo-qr" class="mobile-link block py-2.5 px-3 rounded-xl bg-gold-500/10 text-gold-400 font-bold">
+                <i class="fa-solid fa-qrcode mr-2"></i>Descargar Código QR
+            </a>
+            <a href="#ubicacion" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Ubicación y Horarios</a>
+            <button onclick="toggleAdminModal(true)" class="w-full text-left py-2.5 px-3 rounded-xl bg-dark-800 text-gray-300 font-semibold text-sm flex items-center gap-2">
+                <i class="fa-solid fa-gear text-gold-400"></i> Cómo Actualizar el Sitio a Futuro
+            </button>
+            <div class="pt-2">
+                <a href="https://wa.me/50588767598?text=Hola%20Barber%C3%ADa%20Cortes%20y%20Estilos%20YD,%20quiero%20agendar%20una%20cita" target="_blank" class="w-full flex items-center justify-center gap-2 bg-emerald-500 text-white font-bold py-3 rounded-xl shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Directo: 8876-7598
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO CON FOTOS Y LOGO OFICIAL -->
+    <section id="inicio" class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
+        <!-- Imagen Panorámica Real del Local de Fondo -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://placehold.co/1920x1080/0e1015/d4af37?text=Barberia+Cortes+y+Estilos+YD" alt="Equipo de Barbería Cortes y Estilos YD trabajando" class="w-full h-full object-cover object-center opacity-20 scale-105 filter contrast-125" onerror="this.src='https://placehold.co/1920x1080/0e1015/d4af37?text=Barberia+Cortes+y+Estilos+YD'">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-950/85 to-dark-950/90"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Columna Izquierda: Información Principal -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    
+                    <!-- Estado de Horario y Ubicación -->
+                    <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+                        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            Abierto Lunes a Domingo
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-ydblue-600/30 border border-ydblue-600/50 text-gray-200 text-xs font-semibold">
+                            <i class="fa-solid fa-map-pin text-gold-400"></i> KM27 Carretera Sur, El Crucero
+                        </span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white">
+                        BARBERÍA <br class="hidden sm:inline">
+                        <span class="gold-gradient-text">CORTES Y ESTILOS YD</span>
+                    </h1>
+
+                    <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Tu barbería de confianza en <strong class="text-white">El Crucero, Nicaragua</strong>. Especialistas en <span class="text-gold-400 font-semibold">Cortes Fade, Cortes para Niños, Clásicos, Recorte de Barba y Cejas, Limpieza Facial, Manicure y Pedicure</span>.
+                    </p>
+
+                    <!-- Botones Principales -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+                        <a href="#reservar" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 hover:to-amber-500 text-dark-950 font-extrabold px-7 py-4 rounded-xl shadow-xl shadow-gold-500/20 transition-all transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Reservar Turno Ahora</span>
+                        </a>
+                        <a href="#galeria" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-dark-800 hover:bg-dark-700 text-white border border-white/15 font-bold px-6 py-4 rounded-xl transition-all">
+                            <i class="fa-regular fa-images text-gold-400"></i>
+                            <span>Ver Nuestras Fotos</span>
+                        </a>
+                        <a href="#codigo-qr" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-ydblue-800/80 hover:bg-ydblue-600 text-white border border-ydblue-600 font-bold px-5 py-4 rounded-xl transition-all">
+                            <i class="fa-solid fa-qrcode text-gold-400"></i>
+                            <span>Código QR</span>
+                        </a>
+                    </div>
+
+                    <!-- Tarjeta Rápida de Dirección y Contacto Real -->
+                    <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-left bg-dark-900/90 border border-white/10 p-4 rounded-2xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] text-gray-400 uppercase block font-semibold">WhatsApp / Turnos</span>
+                                <a href="tel:+50588767598" id="hero-phone-text" class="text-sm font-extrabold text-white hover:text-gold-400">+50588767598</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <i class="fa-regular fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] text-gray-400 uppercase block font-semibold">Horario Continuo</span>
+                                <span class="text-xs font-bold text-white block">Lun-Vie: 10AM - 8PM</span>
+                                <span class="text-[11px] text-gold-400 font-semibold block">Sáb-Dom: 9AM - 7PM</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-400 shrink-0">
+                                <i class="fa-brands fa-instagram text-lg"></i>
+                            </div>
+                            <div class="overflow-hidden">
+                                <span class="text-[11px] text-gray-400 uppercase block font-semibold">Síguenos en IG</span>
+                                <a href="https://instagram.com/barberia_corte_y_estilo_yd" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-gold-400 truncate block">
+                                    @barberia_corte_y_estilo_yd
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Composición Visual con Logo + Foto Real en Acción -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 bg-gradient-to-tr from-gold-500/30 via-ydred-500/20 to-ydblue-600/30 rounded-3xl blur-xl"></div>
+                        
+                        <div class="relative bg-dark-800 border border-white/15 rounded-3xl overflow-hidden shadow-2xl">
+                            <!-- Foto Limpia sin Duplicar (1000520836.jpg) -->
+                            <div class="relative h-80 sm:h-96 overflow-hidden">
+                                <img src="https://placehold.co/600x700/161922/d4af37?text=Barberia+YD" alt="Atención profesional en Barbería Cortes y Estilos YD" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x700/161922/d4af37?text=Barberia+YD'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent"></div>
+                                
+                                <!-- Escudo Oficial Flotante -->
+                                <div class="absolute top-4 right-4 bg-white/95 p-1.5 rounded-2xl shadow-2xl border-2 border-gold-500">
+                                    <img src="1000366642.jpg" alt="Escudo Barbería YD" class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-xl" onerror="this.style.display='none'" style="display: none;">
+                                </div>
+
+                                <div class="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+                                    <div>
+                                        <span class="bg-gold-500 text-dark-950 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md tracking-wider">
+                                            100% Talento Local
+                                        </span>
+                                        <p class="text-white font-bold text-sm sm:text-base mt-1.5 drop-shadow">
+                                            KM27 Carretera Sur, 2c arriba camino de Temoa
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA REAL DE LA BARBERÍA (CON FILTRO DE DUPLICADOS) -->
+    <section id="galeria" class="py-20 bg-dark-950 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">
+                        <i class="fa-solid fa-camera-retro"></i> Fotos 100% Reales de Nuestro Trabajo
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white">
+                        GALERÍA <span class="gold-gradient-text">CORTES Y ESTILOS YD</span>
+                    </h2>
+                    <p class="text-gray-400 text-sm sm:text-base mt-2 max-w-2xl">
+                        Conoce nuestras instalaciones en El Crucero, nuestro equipo en acción y el acabado real de nuestros cortes para caballeros y niños. Haz clic en cualquier foto para ampliarla.
+                    </p>
+                </div>
+
+                <!-- Botones de Filtro de Galería -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filterGallery('principales')" data-gal="principales" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-extrabold bg-gold-500 text-dark-950 shadow-lg shadow-gold-500/20 transition-all">
+                        Principales (Sin Duplicados)
+                    </button>
+                    <button onclick="filterGallery('cortes')" data-gal="cortes" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all">
+                        <i class="fa-solid fa-scissors text-gold-400 mr-1"></i> Cortes y Antes/Después
+                    </button>
+                    <button onclick="filterGallery('local')" data-gal="local" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all">
+                        <i class="fa-solid fa-store text-gold-400 mr-1"></i> Nuestro Local y Equipo
+                    </button>
+                    <button onclick="filterGallery('afiches')" data-gal="afiches" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all">
+                        <i class="fa-solid fa-bullhorn text-gold-400 mr-1"></i> Afiches e Info
+                    </button>
+                </div>
+            </div>
+
+            <!-- Nota informativa de limpieza de duplicados -->
+            <div class="mb-8 bg-ydblue-800/30 border border-ydblue-600/40 rounded-2xl p-3.5 px-5 flex flex-wrap items-center justify-between gap-3 text-xs text-gray-300">
+                <div class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+                    <span>
+                        <strong class="text-white">Galería optimizada:</strong> Se integraron tus fotos reales y se filtró la foto repetida (<code class="text-gold-400">1000520847.jpg</code>) dejando la toma original limpia (<code class="text-gold-400">1000520836.jpg</code>) en la vista principal.
+                    </span>
+                </div>
+                <a href="#reservar" class="text-gold-400 font-bold hover:underline">¿Te gusta un corte? Agéndalo aquí →</a>
+            </div>
+
+            <!-- Grid Dinámico de Fotos Reales -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div onclick="openLightbox(0)" class="group cursor-pointer relative rounded-2xl overflow-hidden bg-dark-900 border border-white/10 h-80 shadow-xl">
+                    <img src="https://placehold.co/600x500/161922/d4af37?text=Foto+YD" alt="Corte Fade / Degradado Pulido" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x500/161922/d4af37?text=Foto+YD'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/35 to-transparent flex flex-col justify-end p-5">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="bg-gold-500 text-dark-950 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-md">
+                                Acabado Real YD
+                            </span>
+                            <span class="w-8 h-8 rounded-full bg-dark-950/80 text-white flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-950 transition-colors">
+                                <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-white font-bold text-base group-hover:text-gold-400 transition-colors">Corte Fade / Degradado Pulido</h3>
+                        <p class="text-gray-300 text-xs mt-1 line-clamp-2">Degradado limpio de alta precisión con perfilado de contornos y textura superior.</p>
+                    </div>
+                </div>
+            
+                <div onclick="openLightbox(1)" class="group cursor-pointer relative rounded-2xl overflow-hidden bg-dark-900 border border-white/10 h-80 shadow-xl">
+                    <img src="https://placehold.co/600x500/161922/d4af37?text=Foto+YD" alt="Antes y Después: Corte para Niño con Diseño" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x500/161922/d4af37?text=Foto+YD'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/35 to-transparent flex flex-col justify-end p-5">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="bg-gold-500 text-dark-950 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-md">
+                                Transformación Real
+                            </span>
+                            <span class="w-8 h-8 rounded-full bg-dark-950/80 text-white flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-950 transition-colors">
+                                <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-white font-bold text-base group-hover:text-gold-400 transition-colors">Antes y Después: Corte para Niño con Diseño</h3>
+                        <p class="text-gray-300 text-xs mt-1 line-clamp-2">Cambio total de imagen para niños con raya lateral marcada a navaja y peinado clásico/moderno.</p>
+                    </div>
+                </div>
+            
+                <div onclick="openLightbox(2)" class="group cursor-pointer relative rounded-2xl overflow-hidden bg-dark-900 border border-white/10 h-80 shadow-xl">
+                    <img src="https://placehold.co/600x500/161922/d4af37?text=Foto+YD" alt="Atención Personalizada en Cada Corte" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x500/161922/d4af37?text=Foto+YD'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/35 to-transparent flex flex-col justify-end p-5">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="bg-gold-500 text-dark-950 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-md">
+                                Foto Original Limpia
+                            </span>
+                            <span class="w-8 h-8 rounded-full bg-dark-950/80 text-white flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-950 transition-colors">
+                                <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-white font-bold text-base group-hover:text-gold-400 transition-colors">Atención Personalizada en Cada Corte</h3>
+                        <p class="text-gray-300 text-xs mt-1 line-clamp-2">Servicio dedicado y cómodo para jóvenes y caballeros en nuestras instalaciones.</p>
+                    </div>
+                </div>
+            
+                <div onclick="openLightbox(3)" class="group cursor-pointer relative rounded-2xl overflow-hidden bg-dark-900 border border-white/10 h-80 shadow-xl">
+                    <img src="https://placehold.co/600x500/161922/d4af37?text=Foto+YD" alt="Nuestro Equipo de Barberos en Acción" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x500/161922/d4af37?text=Foto+YD'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/35 to-transparent flex flex-col justify-end p-5">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="bg-gold-500 text-dark-950 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-md">
+                                Ambiente YD
+                            </span>
+                            <span class="w-8 h-8 rounded-full bg-dark-950/80 text-white flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-950 transition-colors">
+                                <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-white font-bold text-base group-hover:text-gold-400 transition-colors">Nuestro Equipo de Barberos en Acción</h3>
+                        <p class="text-gray-300 text-xs mt-1 line-clamp-2">Barberos profesionales atendiendo simultáneamente en El Crucero con pizarra oficial de servicios al fondo.</p>
+                    </div>
+                </div>
+            
+                <div onclick="openLightbox(4)" class="group cursor-pointer relative rounded-2xl overflow-hidden bg-dark-900 border border-white/10 h-80 shadow-xl">
+                    <img src="https://placehold.co/600x500/161922/d4af37?text=Foto+YD" alt="Nuestras Instalaciones (3 Sillas Profesionales)" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x500/161922/d4af37?text=Foto+YD'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/35 to-transparent flex flex-col justify-end p-5">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="bg-gold-500 text-dark-950 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-md">
+                                Local en El Crucero
+                            </span>
+                            <span class="w-8 h-8 rounded-full bg-dark-950/80 text-white flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-950 transition-colors">
+                                <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-white font-bold text-base group-hover:text-gold-400 transition-colors">Nuestras Instalaciones (3 Sillas Profesionales)</h3>
+                        <p class="text-gray-300 text-xs mt-1 line-clamp-2">Amplio espacio iluminado con 3 estaciones completas de barbería, espejos grandes y ambiente agradable.</p>
+                    </div>
+                </div>
+            
+                <div onclick="openLightbox(5)" class="group cursor-pointer relative rounded-2xl overflow-hidden bg-dark-900 border border-white/10 h-80 shadow-xl">
+                    <img src="https://placehold.co/600x500/161922/d4af37?text=Foto+YD" alt="Mosaico Oficial de Cortes y Estilos YD" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x500/161922/d4af37?text=Foto+YD'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/35 to-transparent flex flex-col justify-end p-5">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="bg-gold-500 text-dark-950 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-md">
+                                Portafolio Real
+                            </span>
+                            <span class="w-8 h-8 rounded-full bg-dark-950/80 text-white flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-950 transition-colors">
+                                <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-white font-bold text-base group-hover:text-gold-400 transition-colors">Mosaico Oficial de Cortes y Estilos YD</h3>
+                        <p class="text-gray-300 text-xs mt-1 line-clamp-2">Recopilación de cortes infantiles, juveniles y degradados realizados en nuestra barbería.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS Y PRECIOS (BASADA EN LA PIZARRA Y AFICHE REAL) -->
+    <section id="servicios" class="py-20 bg-dark-900 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="text-gold-400 font-bold text-xs uppercase tracking-widest">Pizarra Oficial de Servicios</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white">NUESTROS SERVICIOS Y PRECIOS</h2>
+                <p class="text-gray-400 text-sm sm:text-base">
+                    Todos los servicios que ofrecemos en <strong class="text-white">Barbería Cortes y Estilos YD</strong>. Puedes personalizar cualquier precio cuando quieras desde el botón <em>"Actualizar Sitio"</em>.
+                </p>
+            </div>
+
+            <!-- Filtros de Categorías de Servicios -->
+            <div class="flex flex-wrap items-center justify-center gap-2.5 mb-10">
+                <button onclick="filterServices('todos')" data-filter="todos" class="service-filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold transition-all bg-gold-500 text-dark-950 shadow-lg shadow-gold-500/20">
+                    Todos los Servicios
+                </button>
+                <button onclick="filterServices('cortes')" data-filter="cortes" class="service-filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-dark-800 text-gray-300 hover:text-white border border-white/10">
+                    <i class="fa-solid fa-scissors mr-1.5 text-gold-400"></i> Cortes (Adultos y Niños)
+                </button>
+                <button onclick="filterServices('barba')" data-filter="barba" class="service-filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-dark-800 text-gray-300 hover:text-white border border-white/10">
+                    <i class="fa-solid fa-user-tie mr-1.5 text-gold-400"></i> Barba, Cejas y Facial
+                </button>
+                <button onclick="filterServices('estetica')" data-filter="estetica" class="service-filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-dark-800 text-gray-300 hover:text-white border border-white/10">
+                    <i class="fa-solid fa-hand-sparkles mr-1.5 text-gold-400"></i> Manicure, Pedicure y Combos
+                </button>
+            </div>
+
+            <!-- Cuadrícula de Servicios -->
+            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    <span class="absolute top-4 right-4 bg-gold-500/20 text-gold-400 border border-gold-500/30 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full">Especialidad YD</span>
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid fa-scissors text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">Corte Fade / Degradado</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">Skin Fade, Mid Fade, Low Fade o Taper con acabado pulido a navaja y peinado texturizado.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>40 min</span>
+                            <span class="text-2xl font-black text-gold-400">C$ 180</span>
+                        </div>
+                        <button onclick="selectServiceAndScroll('corte-fade')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Agendar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    <span class="absolute top-4 right-4 bg-gold-500/20 text-gold-400 border border-gold-500/30 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full">Antes y Después</span>
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid fa-child-reaching text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">Corte para Niños (Clásico o con Raya)</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">Atención paciente para niños. Incluye corte escolar o moderno con línea/diseño si lo desea.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>35 min</span>
+                            <span class="text-2xl font-black text-gold-400">C$ 150</span>
+                        </div>
+                        <button onclick="selectServiceAndScroll('corte-ninos')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Agendar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid fa-user-check text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">Corte Varones / Estudiantil / Degrafilado</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">Corte clásico a tijera o máquina, corte estudiantil limpio o degrafilado con volumen.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>30 min</span>
+                            <span class="text-2xl font-black text-gold-400">C$ 150</span>
+                        </div>
+                        <button onclick="selectServiceAndScroll('corte-varones')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Agendar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    <span class="absolute top-4 right-4 bg-gold-500/20 text-gold-400 border border-gold-500/30 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full">Precisión</span>
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid fa-user-tie text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">Recorte de Barba y Cejas</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">Perfilado simétrico de barba con navaja, rebajado parejo y limpieza de cejas.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>25 min</span>
+                            <span class="text-2xl font-black text-gold-400">C$ 120</span>
+                        </div>
+                        <button onclick="selectServiceAndScroll('barba-cejas')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Agendar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid fa-spray-can-sparkles text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">Afeitado Tradicional</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">Afeitado al ras suave y cuidadoso con productos refrescantes para proteger tu piel.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>25 min</span>
+                            <span class="text-2xl font-black text-gold-400">C$ 100</span>
+                        </div>
+                        <button onclick="selectServiceAndScroll('afeitado')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Agendar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    <span class="absolute top-4 right-4 bg-gold-500/20 text-gold-400 border border-gold-500/30 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full">Cuidado Piel</span>
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid fa-spa text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">Limpieza Facial Masculina</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">Limpieza de impurezas y puntos negros para dejar el rostro fresco y renovado.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>30 min</span>
+                            <span class="text-2xl font-black text-gold-400">C$ 150</span>
+                        </div>
+                        <button onclick="selectServiceAndScroll('facial')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Agendar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    <span class="absolute top-4 right-4 bg-gold-500/20 text-gold-400 border border-gold-500/30 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full">Pizarra YD</span>
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid fa-hand-sparkles text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">Manicure y Pedicure</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">Cuidado integral de manos y pies, corte y limpieza de uñas para una presentación impecable.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>45 min</span>
+                            <span class="text-2xl font-black text-gold-400">C$ 200</span>
+                        </div>
+                        <button onclick="selectServiceAndScroll('manicure-pedicure')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Agendar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    <span class="absolute top-4 right-4 bg-gold-500/20 text-gold-400 border border-gold-500/30 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full">Paquete VIP</span>
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid fa-crown text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">Combo Completo YD (Corte + Barba + Facial)</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">La experiencia completa de Barbería Cortes y Estilos YD: Corte Fade o Clásico + Barba + Cejas + Facial.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>65 min</span>
+                            <span class="text-2xl font-black text-gold-400">C$ 320</span>
+                        </div>
+                        <button onclick="selectServiceAndScroll('combo-yd')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Agendar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE RESERVA DIRECTA AL WHATSAPP +505 8876 7598 -->
+    <section id="reservar" class="py-20 bg-dark-950 border-t border-white/10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-b from-dark-800 to-dark-900 border border-gold-500/40 rounded-3xl p-6 sm:p-10 shadow-2xl">
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- Columna Izquierda: Resumen -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="flex items-center gap-3">
+                            <img src="1000366642.jpg" alt="Logo YD" class="w-12 h-12 rounded-full object-cover border border-gold-500">
+                            <div>
+                                <span class="text-gold-400 text-xs font-bold uppercase tracking-wider block">Agenda tu Cita</span>
+                                <h2 class="font-serif text-2xl font-extrabold text-white">RESERVA TU TURNO</h2>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Elige tu servicio y horario preferido. Al confirmar, se enviará un mensaje directo a nuestro WhatsApp oficial <strong class="text-emerald-400">(505) 8876-7598</strong> para apartar tu silla sin hacer fila.
+                        </p>
+
+                        <!-- Tarjeta de Resumen en Vivo -->
+                        <div class="bg-dark-950/90 border border-white/10 rounded-2xl p-5 space-y-3.5">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-gold-400 flex items-center gap-2">
+                                <i class="fa-solid fa-receipt"></i> Detalle de tu Reserva
+                            </h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between text-gray-300">
+                                    <span>Servicio:</span>
+                                    <span id="summary-service" class="font-bold text-white text-right">Corte Fade / Degradado</span>
+                                </div>
+                                <div class="flex justify-between text-gray-300">
+                                    <span>Duración est.:</span>
+                                    <span id="summary-duration" class="font-medium text-gray-200">40 min</span>
+                                </div>
+                                <div class="border-t border-white/10 pt-2.5 flex justify-between items-center">
+                                    <span class="font-bold text-white">Precio Estimado:</span>
+                                    <span id="summary-price" class="text-2xl font-black text-gold-400">C$ 180</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-dark-950/60 border border-white/5 rounded-xl p-4 text-xs text-gray-400 space-y-1.5">
+                            <p class="text-white font-bold flex items-center gap-2">
+                                <i class="fa-solid fa-location-dot text-ydred-500"></i> Dirección Exacta:
+                            </p>
+                            <p id="booking-address-text">KM27 carretera sur 2 cuadra arriba camino de Temoa, El Crucero, Nicaragua</p>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Formulario -->
+                    <form id="booking-form" onsubmit="sendWhatsAppBooking(event)" class="lg:col-span-7 space-y-4 bg-dark-950/70 p-5 sm:p-7 rounded-2xl border border-white/10">
+                        <div>
+                            <label for="client-name" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1.5">Tu Nombre *</label>
+                            <div class="relative">
+                                <i class="fa-solid fa-user absolute left-4 top-3.5 text-gray-500 text-sm"></i>
+                                <input type="text" id="client-name" required="" placeholder="Ej: José Martínez" class="w-full pl-10 pr-4 py-3 rounded-xl bg-dark-800 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="service-select" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1.5">Servicio que deseas *</label>
+                            <div class="relative">
+                                <i class="fa-solid fa-scissors absolute left-4 top-3.5 text-gold-500 text-sm"></i>
+                                <select id="service-select" onchange="updateBookingSummary()" required="" class="w-full pl-10 pr-8 py-3 rounded-xl bg-dark-800 border border-white/15 text-white text-sm focus:outline-none focus:border-gold-500">
+                <option value="corte-fade">Corte Fade / Degradado — C$ 180</option>
+            
+                <option value="corte-ninos">Corte para Niños (Clásico o con Raya) — C$ 150</option>
+            
+                <option value="corte-varones">Corte Varones / Estudiantil / Degrafilado — C$ 150</option>
+            
+                <option value="barba-cejas">Recorte de Barba y Cejas — C$ 120</option>
+            
+                <option value="afeitado">Afeitado Tradicional — C$ 100</option>
+            
+                <option value="facial">Limpieza Facial Masculina — C$ 150</option>
+            
+                <option value="manicure-pedicure">Manicure y Pedicure — C$ 200</option>
+            
+                <option value="combo-yd">Combo Completo YD (Corte + Barba + Facial) — C$ 320</option>
+            </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="booking-date" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1.5">Fecha *</label>
+                                <input type="date" id="booking-date" required="" class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/15 text-white text-sm focus:outline-none focus:border-gold-500" min="2026-10-22">
+                            </div>
+                            <div>
+                                <label for="booking-time" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1.5">Hora Preferida *</label>
+                                <select id="booking-time" required="" class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/15 text-white text-sm focus:outline-none focus:border-gold-500">
+                                    <option value="09:00 AM (Sáb/Dom)">09:00 AM (Fin de Semana)</option>
+                                    <option value="10:00 AM" selected="">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="01:00 PM">01:00 PM</option>
+                                    <option value="02:00 PM">02:00 PM</option>
+                                    <option value="03:00 PM">03:00 PM</option>
+                                    <option value="04:00 PM">04:00 PM</option>
+                                    <option value="05:00 PM">05:00 PM</option>
+                                    <option value="06:00 PM">06:00 PM</option>
+                                    <option value="07:00 PM">07:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="booking-notes" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1.5">Indicaciones Especiales (Opcional)</label>
+                            <textarea id="booking-notes" rows="2" placeholder="Ej: Corte de niño con raya como el de la foto Antes/Después, o Fade bajo..." class="w-full px-4 py-2.5 rounded-xl bg-dark-800 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-gold-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white font-extrabold text-sm sm:text-base shadow-lg shadow-emerald-600/25 flex items-center justify-center gap-2.5 transition-all transform active:scale-95">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Enviar Reserva al (505) 8876-7598</span>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN EXCLUSIVA: CÓDIGO QR OFICIAL PARA IMPRIMIR O COMPARTIR -->
+    <section id="codigo-qr" class="py-20 bg-dark-900 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-ydblue-800/40 via-dark-800 to-dark-950 border border-gold-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl">
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    
+                    <!-- Explicación y Controles del QR -->
+                    <div class="lg:col-span-7 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/15 border border-gold-500/30 text-gold-400 text-xs font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-qrcode"></i> Tu Código QR Oficial Gratis
+                        </div>
+
+                        <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-white">
+                            CÓDIGO QR DE <span class="gold-gradient-text">CORTES Y ESTILOS YD</span>
+                        </h2>
+
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                            Aquí tienes el **Código QR oficial** de tu barbería. Tus clientes solo abren la cámara de su celular, lo escanean en el espejo o en la entrada de tu local, y van directo a tu **Página Web** o a tu **WhatsApp (505) 8876-7598**.
+                        </p>
+
+                        <!-- Selector de Destino del QR -->
+                        <div class="bg-dark-950/80 border border-white/10 rounded-2xl p-4 space-y-3">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gold-400">
+                                ¿A dónde quieres que lleve el Código QR al escanearlo?
+                            </label>
+                            <div class="grid sm:grid-cols-2 gap-2.5">
+                                <button type="button" onclick="setQRMode('whatsapp')" id="qr-mode-wa" class="py-2.5 px-4 rounded-xl text-xs font-bold border border-gold-500 bg-gold-500 text-dark-950 flex items-center justify-center gap-2 transition-all">
+                                    <i class="fa-brands fa-whatsapp text-base"></i> Directo a Cita WhatsApp
+                                </button>
+                                <button type="button" onclick="setQRMode('web')" id="qr-mode-web" class="py-2.5 px-4 rounded-xl text-xs font-bold border border-white/15 bg-dark-800 text-gray-300 hover:text-white flex items-center justify-center gap-2 transition-all">
+                                    <i class="fa-solid fa-globe text-base"></i> A mi Página Web (GitHub)
+                                </button>
+                            </div>
+
+                            <div class="pt-1">
+                                <label for="qr-custom-url" class="block text-[11px] text-gray-400 mb-1">Enlace codificado en el QR (puedes escribir tu link de GitHub cuando lo publiques):</label>
+                                <input type="text" id="qr-custom-url" oninput="generateQRCode()" value="https://wa.me/50588767598?text=Hola%20Barber%C3%ADa%20Cortes%20y%20Estilos%20YD,%20quiero%20agendar%20una%20cita" class="w-full px-3.5 py-2 rounded-xl bg-dark-800 border border-white/15 text-gold-400 text-xs font-mono focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <!-- Botones de Descarga de QR -->
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <button type="button" onclick="downloadPrintablePosterQR()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 hover:to-amber-500 text-dark-950 font-extrabold text-xs sm:text-sm px-6 py-3.5 rounded-xl shadow-lg shadow-gold-500/20 transition-all">
+                                <i class="fa-solid fa-print text-base"></i>
+                                <span>Descargar Póster QR para Imprimir (PNG)</span>
+                            </button>
+                            <button type="button" onclick="downloadSimpleQR()" class="inline-flex items-center justify-center gap-2 bg-dark-800 hover:bg-dark-700 text-white border border-white/15 font-bold text-xs sm:text-sm px-5 py-3.5 rounded-xl transition-all">
+                                <i class="fa-solid fa-download text-gold-400"></i>
+                                <span>Solo Imagen QR</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Vista Previa de la Tarjeta QR -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="bg-dark-950 border-2 border-gold-500 rounded-3xl p-6 text-center max-w-xs w-full shadow-2xl relative">
+                            <div class="flex items-center justify-center gap-2 mb-3">
+                                <img src="1000366642.jpg" alt="Logo YD" class="w-10 h-10 rounded-full object-cover border border-gold-500" onerror="this.style.display='none'" style="display: none;">
+                                <div class="text-left">
+                                    <span class="block font-serif font-extrabold text-xs text-white tracking-wider">BARBERÍA</span>
+                                    <span class="block font-serif font-bold text-xs text-gold-400">CORTES Y ESTILOS YD</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded-2xl inline-block shadow-inner mx-auto">
+                                <canvas id="qr-canvas" width="220" height="220" class="mx-auto"></canvas>
+                            </div>
+
+                            <p id="qr-caption-label" class="text-xs font-extrabold uppercase tracking-wider text-gold-400 mt-3">
+                                📱 Escanea para Agendar tu Cita
+                            </p>
+                            <p class="text-white font-bold text-sm mt-0.5">(505) 8876-7598</p>
+                            <p class="text-[11px] text-gray-400 mt-1">KM27 Carretera Sur, 2c arriba camino de Temoa, El Crucero</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE UBICACIÓN EXACTA Y HORARIOS OFICIALES -->
+    <section id="ubicacion" class="py-20 bg-dark-950 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- Tarjeta de Horarios Reales y Redes -->
+                <div class="lg:col-span-5 bg-dark-900 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">
+                            <i class="fa-regular fa-clock"></i> Horarios Oficiales
+                        </div>
+                        <h3 class="font-serif text-2xl font-extrabold text-white mb-6">ABIERTO TODA LA SEMANA</h3>
+                        
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex justify-between items-center pb-3.5 border-b border-white/10">
+                                <div>
+                                    <span class="text-white font-bold block">Lunes a Viernes</span>
+                                    <span class="text-xs text-gray-400">Atención continua</span>
+                                </div>
+                                <span id="hours-week-display" class="text-gold-400 font-extrabold bg-gold-500/10 px-3.5 py-1.5 rounded-xl border border-gold-500/30">10:00 AM - 8:00 PM</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-3.5 border-b border-white/10">
+                                <div>
+                                    <span class="text-white font-bold block">Sábados</span>
+                                    <span class="text-xs text-gray-400">Fin de semana</span>
+                                </div>
+                                <span id="hours-sat-display" class="text-emerald-400 font-extrabold bg-emerald-500/10 px-3.5 py-1.5 rounded-xl border border-emerald-500/30">9:00 AM - 7:00 PM</span>
+                            </li>
+                            <li class="flex justify-between items-center pb-2">
+                                <div>
+                                    <span class="text-white font-bold block">Domingos</span>
+                                    <span class="text-xs text-gray-400">Fin de semana</span>
+                                </div>
+                                <span id="hours-sun-display" class="text-emerald-400 font-extrabold bg-emerald-500/10 px-3.5 py-1.5 rounded-xl border border-emerald-500/30">9:00 AM - 7:00 PM</span>
+                            </li>
+                        </ul>
+
+                        <!-- Mini Vista de las 3 Sillas del Local -->
+                        <div class="mt-6 rounded-2xl overflow-hidden border border-white/10 relative h-36">
+                            <img src="1000366643.jpg" alt="Interior de Barbería Cortes y Estilos YD" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent flex items-end p-3.5">
+                                <span class="text-xs text-white font-bold">
+                                    <i class="fa-solid fa-chair text-gold-400 mr-1"></i> 3 Estaciones Profesionales Listas para Atenderte
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-5 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
+                        <div>
+                            <span class="text-xs text-gray-400 block">Reserva tu turno al:</span>
+                            <a href="tel:+50588767598" id="contact-phone-display" class="text-lg font-black text-white hover:text-gold-400">+50588767598</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <a href="https://instagram.com/barberia_corte_y_estilo_yd" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-pink-600/20 hover:bg-pink-600 text-pink-400 hover:text-white border border-pink-500/30 font-bold text-xs px-4 py-2.5 rounded-xl transition-all">
+                                <i class="fa-brands fa-instagram text-base"></i> Instagram
+                            </a>
+                            <button onclick="openDirectWhatsApp()" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all">
+                                <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapa y Dirección Exacta en El Crucero -->
+                <div class="lg:col-span-7 bg-dark-900 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">
+                            <i class="fa-solid fa-location-dot"></i> Cómo Llegar
+                        </div>
+                        <h3 class="font-serif text-2xl font-extrabold text-white mb-2">UBICACIÓN EN EL CRUCERO</h3>
+                        <p id="location-address-display" class="text-gray-200 font-semibold text-sm sm:text-base mb-5 bg-dark-800 p-3.5 rounded-xl border border-gold-500/30">📍 KM27 carretera sur 2 cuadra arriba camino de Temoa, El Crucero, Nicaragua</p>
+
+                        <!-- Mapa Interactivo de El Crucero / Carretera Sur -->
+                        <div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden border border-white/10 bg-dark-950">
+                            <iframe title="Mapa Barbería Cortes y Estilos YD en El Crucero" src="data:text/html; charset=utf-8;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KICAgICAgaHRtbCwgYm9keSwgI21hcERpdiB7CiAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIG1hcmdpbjogMDsKICAgICAgICBwYWRkaW5nOiAwOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvaGVhZD4KICA8Ym9keT4KICAgIDxkaXYgaWQ9Im1hcERpdiI+PC9kaXY+CiAgICAgIAogICAgPHNjcmlwdCBub25jZT0iQnA0VGZRSUszOHFmV2o1STJ5RTNkdyI+CiAgICAgIGZ1bmN0aW9uIG9uRW1iZWRMb2FkKCkgewogICAgICAgIGluaXRFbWJlZChbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFtbWzIsInNwb3RsaXQiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxbbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxMSxudWxsLFtudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDFdXV1dLG51bGwsbnVsbCxbW251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsW1tbIjEwMzM2MTM1MjU1ODExNzQzMDM5IiwiNjQzNTUyMjQ0MzMyNTM1OTk3MCJdLCIvZy8xMjJuYzJycyIsbnVsbCxbMTIxMTMzMTMyLDM0MzE4MDg4NzRdLG51bGwsbnVsbCxudWxsLDEsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsImdjaWQ6cm91dGUiXSwwLG51bGwsbnVsbCxudWxsLDAsbnVsbCwwLDBdXV1dLG51bGwsWyJlc19VUyJdLFtudWxsLG51bGwsbnVsbCwiL21hcHMvYXBpL2pzL0FwcGxpY2F0aW9uU2VydmljZS5HZXRFbnRpdHlEZXRhaWxzIiwiL21hcHMvZW1iZWQvdXBncmFkZTIwNCIsbnVsbCwiL21hcHMvZW1iZWQvcmVjb3JkMjA0Il0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLCJ1RlhaYXViNUZOV0d3YmtQX2JPQm9ROCIsbnVsbCxudWxsLG51bGwsW1tbMzkwMC45ODI5MjAxNzI2MDIsLTg2LjMxNTg0MjE5OTk5OTk5LDEyLjExMzMxMzJdLFswLDAsMF0sbnVsbCwxMy4xMDAwMDAzODE0Njk3M10sbnVsbCxudWxsLFtbIjB4OGY3MTU0NDA4MTBjZGQzZjoweDU5NGY5MTkwYmE3NjQ3NjIiLCJDYXJyLiBTdXIgVsOtYSBQYW5hbWVyaWNhbmEsIE1hbmFndWEiLFsxMi4xMTMzMTMyLC04Ni4zMTU4NDIxOTk5OTk5OV1dLCJDYXJyLiBTdXIgVsOtYSBQYW5hbWVyaWNhbmEiLFsiTWFuYWd1YSJdLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIk1hbmFndWEiLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMSxudWxsLG51bGwsIkNoSUpQOTBNZ1VCVWNZOFJZa2QydXBDUlQxayIsbnVsbCxudWxsLCIyYWhVS0V3am10ZkNock15WEF4VlZRekFCSGYxWklQUVE4QmNvQUhvRUNBSVFBdyJdXSxudWxsLG51bGwsbnVsbCwwLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxXV0pOwogICAgICB9CiAgICAgIGZ1bmN0aW9uIG9uQXBpTG9hZCgpIHsKICAgICAgICB2YXIgZW1iZWQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICBlbWJlZC5zcmMgPSAiaHR0cHM6Ly9tYXBzLmdzdGF0aWMuY29tL21hcHMtYXBpLXYzL2VtYmVkL2pzLzY2LzlkL2ludGwvZXNfNDE5L2luaXRfZW1iZWQuanMiOwogICAgICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoZW1iZWQpOwogICAgICB9CiAgICA8L3NjcmlwdD4KICAgIDxsaW5rIHJlbD0icHJlbG9hZCIgaHJlZj0iaHR0cHM6Ly9tYXBzLmdzdGF0aWMuY29tL21hcHMtYXBpLXYzL2VtYmVkL2pzLzY2LzlkL2ludGwvZXNfNDE5L2luaXRfZW1iZWQuanMiIG5vbmNlPSJCcDRUZlFJSzM4cWZXajVJMnlFM2R3IiBhcz0ic2NyaXB0IiAvPgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vbWFwcy5nb29nbGVhcGlzLmNvbS9tYXBzL2FwaS9qcz9rZXk9QUl6YVN5Q21MMThtaXNRdzlLZHdxR2F3M3pIa2l0ajh2RzZRRjJZJmFtcDtwYWludF9vcmlnaW49JmFtcDtsaWJyYXJpZXM9Z2VvbWV0cnksc2VhcmNoJmFtcDt2PXdlZWtseSZhbXA7bG9hZGluZz1hc3luYyZhbXA7bGFuZ3VhZ2U9ZXNfVVMmYW1wO2V4cGVyaW1lbnRhdGlvbj1hbGxvd2VkJmFtcDtjYWxsYmFjaz1vbkFwaUxvYWQiIG5vbmNlPSJCcDRUZlFJSzM4cWZXajVJMnlFM2R3IiBhc3luYyBkZWZlcj48L3NjcmlwdD4KICA8L2JvZHk+CjwvaHRtbD4K" width="100%" height="100%" style="border:0; filter: contrast(1.05);" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=El+Crucero+Nicaragua+KM+27+Carretera+Sur" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold text-gold-400 hover:text-gold-300">
+                            <i class="fa-solid fa-diamond-turn-right text-base"></i> Abrir ruta en Google Maps
+                        </a>
+                        <span class="text-xs text-gray-400">
+                            Instagram: <strong class="text-white">@barberia_corte_y_estilo_yd</strong>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA Y BOTÓN DE ADMINISTRACIÓN / ACTUALIZACIÓN FUTURA -->
+    <footer class="bg-dark-950 border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3.5">
+                <img src="1000366642.jpg" alt="Logo Barbería YD" class="w-11 h-11 rounded-full object-cover border border-gold-500">
+                <div>
+                    <p class="text-white font-serif font-bold text-sm">Barbería Cortes y Estilos YD</p>
+                    <p class="text-xs text-gray-400">KM27 Carretera Sur, 2c arriba camino de Temoa, El Crucero, Nicaragua • Tel: (505) 8876-7598</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3">
+                <button onclick="toggleAdminModal(true)" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gold-500/15 hover:bg-gold-500 text-gold-400 hover:text-dark-950 border border-gold-500/40 text-xs font-extrabold transition-all">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>¿Cómo Actualizar mi Página a Futuro? / Editar Precios</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <button onclick="openDirectWhatsApp()" aria-label="Escribir por WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </button>
+
+    <!-- MODAL VISOR DE FOTOS EN PANTALLA COMPLETA (LIGHTBOX) -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="relative max-w-3xl w-full bg-dark-900 border border-white/15 rounded-3xl overflow-hidden shadow-2xl">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-dark-950/90 text-white hover:text-gold-400 flex items-center justify-center z-10 border border-white/15">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="bg-black flex items-center justify-center max-h-[75vh] overflow-hidden">
+                <img id="lightbox-img" src="" alt="Foto Ampliada Barbería YD" class="max-h-[75vh] w-auto object-contain">
+            </div>
+            <div class="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-dark-900 border-t border-white/10">
+                <div>
+                    <span id="lightbox-tag" class="text-[10px] font-extrabold uppercase tracking-wider text-gold-400 block"></span>
+                    <h4 id="lightbox-title" class="text-white font-bold text-lg"></h4>
+                    <p id="lightbox-desc" class="text-gray-400 text-xs mt-0.5"></p>
+                </div>
+                <a href="#reservar" onclick="closeLightbox()" class="bg-gold-500 hover:bg-gold-400 text-dark-950 font-extrabold text-xs px-5 py-3 rounded-xl text-center shrink-0">
+                    Reservar este estilo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE ADMINISTRACIÓN: CÓMO ACTUALIZAR A FUTURO + EDITOR CON DESCARGA DE INDEX.HTML -->
+    <div id="admin-modal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-dark-900 border border-gold-500/40 rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl my-8 space-y-6 max-h-[90vh] overflow-y-auto">
+            
+            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400">
+                        <i class="fa-solid fa-pen-ruler text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-lg sm:text-xl font-extrabold text-white">Panel para Actualizar tu Página Web</h3>
+                        <p class="text-xs text-gray-400">Cambia precios, horarios o teléfono y descarga tu archivo listo para GitHub</p>
+                    </div>
+                </div>
+                <button onclick="toggleAdminModal(false)" class="w-9 h-9 rounded-lg bg-dark-800 text-gray-400 hover:text-white flex items-center justify-center">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Editor Rápido Sin Saber Programar -->
+            <div class="space-y-4 bg-dark-950 p-5 rounded-2xl border border-white/10">
+                <h4 class="text-xs sm:text-sm font-extrabold text-gold-400 uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-bolt"></i> Opción 1: Editar Precios y Datos Aquí Mismo (Sin tocar código)
+                </h4>
+                <p class="text-xs text-gray-300 leading-relaxed">
+                    Modifica cualquier dato aquí abajo, presiona <strong>"Aplicar Cambios"</strong> para verlo en tu página y luego presiona <strong>"Descargar index.html Actualizado"</strong> para subirlo a tu GitHub.
+                </p>
+
+                <div class="grid sm:grid-cols-2 gap-3 pt-1">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">WhatsApp (Código 505 + Número)</label>
+                        <input type="text" id="admin-phone" value="50588767598" class="w-full px-3 py-2 rounded-xl bg-dark-800 border border-white/15 text-white text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">Dirección en El Crucero</label>
+                        <input type="text" id="admin-address" value="KM27 carretera sur 2 cuadra arriba camino de Temoa, El Crucero, Nicaragua" class="w-full px-3 py-2 rounded-xl bg-dark-800 border border-white/15 text-white text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">Horario Lunes a Viernes</label>
+                        <input type="text" id="admin-hours-week" value="10:00 AM - 8:00 PM" class="w-full px-3 py-2 rounded-xl bg-dark-800 border border-white/15 text-white text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-300 mb-1">Horario Sábado y Domingo</label>
+                        <input type="text" id="admin-hours-weekend" value="9:00 AM - 7:00 PM" class="w-full px-3 py-2 rounded-xl bg-dark-800 border border-white/15 text-white text-sm">
+                    </div>
+                </div>
+
+                <!-- Lista Editable de Precios de Servicios -->
+                <div class="pt-2">
+                    <label class="block text-xs font-bold uppercase tracking-wider text-gold-400 mb-2">Editar Precios de los Servicios (en Córdobas C$):</label>
+                    <div id="admin-services-list" class="grid sm:grid-cols-2 gap-2.5 max-h-52 overflow-y-auto pr-1">
+                        <!-- Llenado dinámico por JS -->
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3 pt-3 border-t border-white/10">
+                    <button type="button" onclick="applyAdminChanges()" class="bg-emerald-500 hover:bg-emerald-400 text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all">
+                        <i class="fa-solid fa-check mr-1"></i> 1. Aplicar Cambios en Vivo
+                    </button>
+                    <button type="button" onclick="exportUpdatedHTML()" class="bg-gold-500 hover:bg-gold-400 text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all">
+                        <i class="fa-solid fa-download mr-1"></i> 2. Descargar index.html Actualizado
+                    </button>
+                    <span id="admin-status-msg" class="text-xs text-emerald-400 font-bold">¡Cambios aplicados!</span>
+                </div>
+            </div>
+
+            <!-- Guía Paso a Paso de Cómo Actualizar en GitHub -->
+            <div class="space-y-3 text-xs sm:text-sm text-gray-300 leading-relaxed">
+                <h4 class="text-xs sm:text-sm font-extrabold text-gold-400 uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-brands fa-github text-base"></i> Guía: ¿Cómo subir tus fotos y actualizar tu web en GitHub?
+                </h4>
+                <div class="bg-dark-800/80 p-4 rounded-2xl border border-white/10 space-y-2.5">
+                    <p><strong class="text-white">Paso 1 (Primera vez):</strong> Sube a tu repositorio de GitHub este archivo <code class="text-gold-400">index.html</code> junto con las fotos que me enviaste (<code class="text-gold-400">1000366642.jpg</code>, <code class="text-gold-400">1000365336.jpg</code>, <code class="text-gold-400">1000369655.jpg</code>, <code class="text-gold-400">1000520836.jpg</code>, <code class="text-gold-400">1000378398.jpg</code>, <code class="text-gold-400">1000366643.jpg</code>, <code class="text-gold-400">1000392493.jpg</code>, <code class="text-gold-400">1000520848.jpg</code> y <code class="text-gold-400">1000476153.jpg</code>).</p>
+                    <p><strong class="text-white">Paso 2 (Cómo cambiar un precio o teléfono a futuro):</strong> Entras a tu propia página web, abres este panel, cambias el precio, presionas <em>"Descargar index.html Actualizado"</em> y subes ese nuevo archivo a GitHub reemplazando el anterior.</p>
+                    <p><strong class="text-white">Paso 3 (Cómo cambiar o agregar una foto nueva desde tu celular):</strong> En GitHub tocas <em>"Add file" → "Upload files"</em>, subes la foto nueva de un corte. Si le pones el mismo nombre de una foto anterior (por ejemplo <code class="text-gold-400">1000365336.jpg</code>), se actualizará sola inmediatamente en la web.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ==========================================
+         LÓGICA JAVASCRIPT DE LA PÁGINA WEB YD
+         ========================================== -->
+    <script>
+        // 1. DATOS OFICIALES DE BARBERÍA CORTES Y ESTILOS YD (Extraídos de las imágenes del propietario)
+        let BARBER_CONFIG = {
+            name: "Barbería Cortes y Estilos YD",
+            whatsappNumber: "50588767598",
+            displayPhone: "(505) 8876-7598",
+            address: "KM27 carretera sur 2 cuadra arriba camino de Temoa, El Crucero, Nicaragua",
+            instagram: "https://instagram.com/barberia_corte_y_estilo_yd",
+            hoursWeek: "10:00 AM - 8:00 PM",
+            hoursWeekend: "9:00 AM - 7:00 PM",
+            currency: "C$"
+        };
+
+        // 2. GALERÍA DE FOTOS REALES SUBIDAS (Sin el duplicado 1000520847.jpg en la vista principal)
+        const GALLERY_DATA = [
+            {
+                file: "1000365336.jpg",
+                title: "Corte Fade / Degradado Pulido",
+                tag: "Acabado Real YD",
+                category: "cortes",
+                isMain: true,
+                desc: "Degradado limpio de alta precisión con perfilado de contornos y textura superior."
+            },
+            {
+                file: "1000369655.jpg",
+                title: "Antes y Después: Corte para Niño con Diseño",
+                tag: "Transformación Real",
+                category: "cortes",
+                isMain: true,
+                desc: "Cambio total de imagen para niños con raya lateral marcada a navaja y peinado clásico/moderno."
+            },
+            {
+                file: "1000520836.jpg",
+                title: "Atención Personalizada en Cada Corte",
+                tag: "Foto Original Limpia",
+                category: "cortes",
+                isMain: true,
+                desc: "Servicio dedicado y cómodo para jóvenes y caballeros en nuestras instalaciones."
+            },
+            {
+                file: "1000378398.jpg",
+                title: "Nuestro Equipo de Barberos en Acción",
+                tag: "Ambiente YD",
+                category: "local",
+                isMain: true,
+                desc: "Barberos profesionales atendiendo simultáneamente en El Crucero con pizarra oficial de servicios al fondo."
+            },
+            {
+                file: "1000366643.jpg",
+                title: "Nuestras Instalaciones (3 Sillas Profesionales)",
+                tag: "Local en El Crucero",
+                category: "local",
+                isMain: true,
+                desc: "Amplio espacio iluminado con 3 estaciones completas de barbería, espejos grandes y ambiente agradable."
+            },
+            {
+                file: "1000392493.jpg",
+                title: "Mosaico Oficial de Cortes y Estilos YD",
+                tag: "Portafolio Real",
+                category: "cortes",
+                isMain: true,
+                desc: "Recopilación de cortes infantiles, juveniles y degradados realizados en nuestra barbería."
+            },
+            {
+                file: "1000520848.jpg",
+                title: "Afiche Oficial de Servicios y Horarios",
+                tag: "Afiche Informativo",
+                category: "afiches",
+                isMain: false,
+                desc: "Resumen de nuestros servicios: Corte, Afeitado, Recorte de Barba, Corte para Niños y Facial."
+            },
+            {
+                file: "1000476153.jpg",
+                title: "Horario Especial de Fin de Semana",
+                tag: "Sábado y Domingo",
+                category: "afiches",
+                isMain: false,
+                desc: "Atención sábados y domingos de 9:00 AM a 7:00 PM. Síguenos en @barberia_corte_y_estilo_yd."
+            }
+        ];
+
+        // 3. CATÁLOGO DE SERVICIOS REALES (Extraídos de la pizarra del espejo en 1000378398.jpg y afiche 1000520848.jpg)
+        let SERVICES_DATA = [
+            {
+                id: "corte-fade",
+                name: "Corte Fade / Degradado",
+                category: "cortes",
+                price: 180,
+                duration: "40 min",
+                badge: "Especialidad YD",
+                desc: "Skin Fade, Mid Fade, Low Fade o Taper con acabado pulido a navaja y peinado texturizado.",
+                icon: "fa-scissors"
+            },
+            {
+                id: "corte-ninos",
+                name: "Corte para Niños (Clásico o con Raya)",
+                category: "cortes",
+                price: 150,
+                duration: "35 min",
+                badge: "Antes y Después",
+                desc: "Atención paciente para niños. Incluye corte escolar o moderno con línea/diseño si lo desea.",
+                icon: "fa-child-reaching"
+            },
+            {
+                id: "corte-varones",
+                name: "Corte Varones / Estudiantil / Degrafilado",
+                category: "cortes",
+                price: 150,
+                duration: "30 min",
+                badge: "",
+                desc: "Corte clásico a tijera o máquina, corte estudiantil limpio o degrafilado con volumen.",
+                icon: "fa-user-check"
+            },
+            {
+                id: "barba-cejas",
+                name: "Recorte de Barba y Cejas",
+                category: "barba",
+                price: 120,
+                duration: "25 min",
+                badge: "Precisión",
+                desc: "Perfilado simétrico de barba con navaja, rebajado parejo y limpieza de cejas.",
+                icon: "fa-user-tie"
+            },
+            {
+                id: "afeitado",
+                name: "Afeitado Tradicional",
+                category: "barba",
+                price: 100,
+                duration: "25 min",
+                badge: "",
+                desc: "Afeitado al ras suave y cuidadoso con productos refrescantes para proteger tu piel.",
+                icon: "fa-spray-can-sparkles"
+            },
+            {
+                id: "facial",
+                name: "Limpieza Facial Masculina",
+                category: "barba",
+                price: 150,
+                duration: "30 min",
+                badge: "Cuidado Piel",
+                desc: "Limpieza de impurezas y puntos negros para dejar el rostro fresco y renovado.",
+                icon: "fa-spa"
+            },
+            {
+                id: "manicure-pedicure",
+                name: "Manicure y Pedicure",
+                category: "estetica",
+                price: 200,
+                duration: "45 min",
+                badge: "Pizarra YD",
+                desc: "Cuidado integral de manos y pies, corte y limpieza de uñas para una presentación impecable.",
+                icon: "fa-hand-sparkles"
+            },
+            {
+                id: "combo-yd",
+                name: "Combo Completo YD (Corte + Barba + Facial)",
+                category: "estetica",
+                price: 320,
+                duration: "65 min",
+                badge: "Paquete VIP",
+                desc: "La experiencia completa de Barbería Cortes y Estilos YD: Corte Fade o Clásico + Barba + Cejas + Facial.",
+                icon: "fa-crown"
+            }
+        ];
+
+        // Renderizar Galería de Fotos Reales
+        let currentGalleryFilter = 'principales';
+        function renderGallery(filter = 'principales') {
+            currentGalleryFilter = filter;
+            const grid = document.getElementById("gallery-grid");
+            let list = [];
+
+            if (filter === 'principales') {
+                list = GALLERY_DATA.filter(item => item.isMain);
+            } else {
+                list = GALLERY_DATA.filter(item => item.category === filter);
+            }
+
+            grid.innerHTML = list.map((item, idx) => `
+                <div onclick="openLightbox(${idx})" class="group cursor-pointer relative rounded-2xl overflow-hidden bg-dark-900 border border-white/10 h-80 shadow-xl">
+                    <img src="${item.file}" 
+                         alt="${item.title}" 
+                         class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/600x500/161922/d4af37?text=Foto+YD'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/35 to-transparent flex flex-col justify-end p-5">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="bg-gold-500 text-dark-950 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-md">
+                                ${item.tag}
+                            </span>
+                            <span class="w-8 h-8 rounded-full bg-dark-950/80 text-white flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-950 transition-colors">
+                                <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-white font-bold text-base group-hover:text-gold-400 transition-colors">${item.title}</h3>
+                        <p class="text-gray-300 text-xs mt-1 line-clamp-2">${item.desc}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterGallery(cat) {
+            document.querySelectorAll('.gal-filter-btn').forEach(btn => {
+                if (btn.dataset.gal === cat) {
+                    btn.className = "gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-extrabold bg-gold-500 text-dark-950 shadow-lg shadow-gold-500/20 transition-all";
+                } else {
+                    btn.className = "gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all";
+                }
+            });
+            renderGallery(cat);
+        }
+
+        function openLightbox(index) {
+            const list = currentGalleryFilter === 'principales'
+                ? GALLERY_DATA.filter(i => i.isMain)
+                : GALLERY_DATA.filter(i => i.category === currentGalleryFilter);
+            const item = list[index];
+            if (!item) return;
+
+            document.getElementById("lightbox-img").src = item.file;
+            document.getElementById("lightbox-tag").textContent = item.tag;
+            document.getElementById("lightbox-title").textContent = item.title;
+            document.getElementById("lightbox-desc").textContent = item.desc;
+            document.getElementById("lightbox-modal").classList.remove("hidden");
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox-modal").classList.add("hidden");
+        }
+
+        // Renderizar Servicios
+        function renderServices(filter = "todos") {
+            const grid = document.getElementById("services-grid");
+            const filtered = filter === "todos" 
+                ? SERVICES_DATA 
+                : SERVICES_DATA.filter(s => s.category === filter);
+
+            grid.innerHTML = filtered.map(service => `
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    ${service.badge ? `<span class="absolute top-4 right-4 bg-gold-500/20 text-gold-400 border border-gold-500/30 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full">${service.badge}</span>` : ''}
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid ${service.icon} text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">${service.name}</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">${service.desc}</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>${service.duration}</span>
+                            <span class="text-2xl font-black text-gold-400">${BARBER_CONFIG.currency} ${service.price}</span>
+                        </div>
+                        <button onclick="selectServiceAndScroll('${service.id}')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5">
+                            <span>Agendar</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterServices(category) {
+            document.querySelectorAll('.service-filter-btn').forEach(btn => {
+                if (btn.dataset.filter === category) {
+                    btn.className = "service-filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold transition-all bg-gold-500 text-dark-950 shadow-lg shadow-gold-500/20";
+                } else {
+                    btn.className = "service-filter-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-dark-800 text-gray-300 hover:text-white border border-white/10";
+                }
+            });
+            renderServices(category);
+        }
+
+        // Reserva por WhatsApp
+        function populateBookingSelect() {
+            const select = document.getElementById("service-select");
+            select.innerHTML = SERVICES_DATA.map(s => `
+                <option value="${s.id}">${s.name} — ${BARBER_CONFIG.currency} ${s.price}</option>
+            `).join('');
+            updateBookingSummary();
+        }
+
+        function updateBookingSummary() {
+            const select = document.getElementById("service-select");
+            const selected = SERVICES_DATA.find(s => s.id === select.value) || SERVICES_DATA[0];
+            document.getElementById("summary-service").textContent = selected.name;
+            document.getElementById("summary-duration").textContent = selected.duration;
+            document.getElementById("summary-price").textContent = `${BARBER_CONFIG.currency} ${selected.price}`;
+        }
+
+        function selectServiceAndScroll(serviceId) {
+            const select = document.getElementById("service-select");
+            select.value = serviceId;
+            updateBookingSummary();
+            document.getElementById("reservar").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function sendWhatsAppBooking(event) {
+            event.preventDefault();
+            const name = document.getElementById("client-name").value.trim();
+            const serviceId = document.getElementById("service-select").value;
+            const date = document.getElementById("booking-date").value;
+            const time = document.getElementById("booking-time").value;
+            const notes = document.getElementById("booking-notes").value.trim();
+
+            const service = SERVICES_DATA.find(s => s.id === serviceId) || SERVICES_DATA[0];
+
+            const message = [
+                `💈 *NUEVA CITA - BARBERÍA CORTES Y ESTILOS YD* 💈`,
+                `Hola, quiero reservar un turno:`,
+                ``,
+                `👤 *Cliente:* ${name}`,
+                `✂️ *Servicio:* ${service.name}`,
+                `💰 *Precio est.:* ${BARBER_CONFIG.currency} ${service.price}`,
+                `📅 *Fecha:* ${date}`,
+                `⏰ *Hora:* ${time}`,
+                notes ? `📝 *Nota:* ${notes}` : ``,
+                ``,
+                `📍 *Dirección:* ${BARBER_CONFIG.address}`
+            ].filter(Boolean).join('\n');
+
+            const cleanPhone = BARBER_CONFIG.whatsappNumber.replace(/\D/g, '');
+            window.open(`https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        function openDirectWhatsApp() {
+            const cleanPhone = BARBER_CONFIG.whatsappNumber.replace(/\D/g, '');
+            const text = `Hola *Barbería Cortes y Estilos YD*, me gustaría agendar una cita.`;
+            window.open(`https://wa.me/${cleanPhone}?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        // ==========================================
+        // GENERADOR DE CÓDIGO QR Y PÓSTER IMPRIMIBLE
+        // ==========================================
+        let qrInstance = null;
+
+        function generateQRCode() {
+            const urlInput = document.getElementById("qr-custom-url").value.trim() || "https://wa.me/50588767598";
+            const canvas = document.getElementById("qr-canvas");
+            if (window.QRious) {
+                qrInstance = new QRious({
+                    element: canvas,
+                    value: urlInput,
+                    size: 220,
+                    level: 'H',
+                    background: '#ffffff',
+                    foreground: '#0e1015'
+                });
+            }
+        }
+
+        function setQRMode(mode) {
+            const waBtn = document.getElementById("qr-mode-wa");
+            const webBtn = document.getElementById("qr-mode-web");
+            const input = document.getElementById("qr-custom-url");
+            const caption = document.getElementById("qr-caption-label");
+
+            if (mode === 'whatsapp') {
+                waBtn.className = "py-2.5 px-4 rounded-xl text-xs font-bold border border-gold-500 bg-gold-500 text-dark-950 flex items-center justify-center gap-2 transition-all";
+                webBtn.className = "py-2.5 px-4 rounded-xl text-xs font-bold border border-white/15 bg-dark-800 text-gray-300 hover:text-white flex items-center justify-center gap-2 transition-all";
+                input.value = `https://wa.me/${BARBER_CONFIG.whatsappNumber}?text=Hola%20Barber%C3%ADa%20Cortes%20y%20Estilos%20YD,%20quiero%20agendar%20una%20cita`;
+                caption.textContent = "📱 Escanea para Agendar por WhatsApp";
+            } else {
+                webBtn.className = "py-2.5 px-4 rounded-xl text-xs font-bold border border-gold-500 bg-gold-500 text-dark-950 flex items-center justify-center gap-2 transition-all";
+                waBtn.className = "py-2.5 px-4 rounded-xl text-xs font-bold border border-white/15 bg-dark-800 text-gray-300 hover:text-white flex items-center justify-center gap-2 transition-all";
+                const currentUrl = window.location.href.startsWith('http') ? window.location.href.split('#')[0] : 'https://tu-usuario.github.io/barberia-yd/';
+                input.value = currentUrl;
+                caption.textContent = "🌐 Escanea para Ver Nuestro Sitio Web";
+            }
+            generateQRCode();
+        }
+
+        function downloadSimpleQR() {
+            const canvas = document.getElementById("qr-canvas");
+            const link = document.createElement("a");
+            link.download = "QR-Barberia-Cortes-y-Estilos-YD.png";
+            link.href = canvas.toDataURL("image/png");
+            link.click();
+        }
+
+        function downloadPrintablePosterQR() {
+            const qrCanvas = document.getElementById("qr-canvas");
+            const poster = document.createElement("canvas");
+            poster.width = 800;
+            poster.height = 1100;
+            const ctx = poster.getContext("2d");
+
+            // Fondo Elegante Oscuro
+            ctx.fillStyle = "#0e1015";
+            ctx.fillRect(0, 0, 800, 1100);
+
+            // Marco Dorado Doble
+            ctx.strokeStyle = "#d4af37";
+            ctx.lineWidth = 8;
+            ctx.strokeRect(35, 35, 730, 1030);
+            ctx.lineWidth = 2;
+            ctx.strokeRect(50, 50, 700, 1000);
+
+            // Títulos Superiores
+            ctx.fillStyle = "#ffffff";
+            ctx.textAlign = "center";
+            ctx.font = "bold 46px Cinzel, serif";
+            ctx.fillText("BARBERÍA", 400, 145);
+
+            ctx.fillStyle = "#d4af37";
+            ctx.font = "bold 42px Cinzel, serif";
+            ctx.fillText("CORTES Y ESTILOS YD", 400, 200);
+
+            ctx.fillStyle = "#cbd5e1";
+            ctx.font = "600 22px Plus Jakarta Sans, sans-serif";
+            ctx.fillText("CORTE • AFEITADO • BARBA • NIÑOS • FACIAL", 400, 255);
+
+            // Caja Blanca Central para el QR
+            ctx.fillStyle = "#ffffff";
+            ctx.fillRect(190, 300, 420, 420);
+            ctx.drawImage(qrCanvas, 210, 320, 380, 380);
+
+            // Llamado a la acción inferior
+            ctx.fillStyle = "#d4af37";
+            ctx.font = "bold 32px Plus Jakarta Sans, sans-serif";
+            ctx.fillText("ESCANEA EL CÓDIGO QR CON TU CELULAR", 400, 795);
+
+            ctx.fillStyle = "#ffffff";
+            ctx.font = "bold 42px Plus Jakarta Sans, sans-serif";
+            ctx.fillText("WhatsApp: (505) 8876-7598", 400, 865);
+
+            ctx.fillStyle = "#94a3b8";
+            ctx.font = "500 22px Plus Jakarta Sans, sans-serif";
+            ctx.fillText("KM27 Carretera Sur, 2 cuadras arriba camino de Temoa", 400, 930);
+            ctx.fillText("El Crucero, Nicaragua • Lun a Dom", 400, 965);
+
+            ctx.fillStyle = "#d4af37";
+            ctx.font = "600 20px Plus Jakarta Sans, sans-serif";
+            ctx.fillText("Instagram: @barberia_corte_y_estilo_yd", 400, 1015);
+
+            const link = document.createElement("a");
+            link.download = "Poster-QR-Barberia-Cortes-y-Estilos-YD.png";
+            link.href = poster.toDataURL("image/png");
+            link.click();
+        }
+
+        // ==========================================
+        // PANEL DE ACTUALIZACIÓN Y EXPORTACIÓN HTML
+        // ==========================================
+        function toggleAdminModal(show) {
+            const modal = document.getElementById("admin-modal");
+            if (show) {
+                renderAdminServicesInputs();
+                modal.classList.remove("hidden");
+            } else {
+                modal.classList.add("hidden");
+            }
+        }
+
+        function renderAdminServicesInputs() {
+            const container = document.getElementById("admin-services-list");
+            container.innerHTML = SERVICES_DATA.map((s, index) => `
+                <div class="flex items-center justify-between gap-2 bg-dark-900 p-2.5 rounded-xl border border-white/10">
+                    <span class="text-xs text-gray-200 font-medium truncate">${s.name}</span>
+                    <div class="flex items-center gap-1 shrink-0">
+                        <span class="text-xs text-gold-400 font-bold">C$</span>
+                        <input type="number" data-srv-idx="${index}" value="${s.price}" 
+                               class="admin-price-input w-20 px-2 py-1 rounded-lg bg-dark-800 border border-white/15 text-white text-xs font-bold text-right">
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function applyAdminChanges() {
+            const newPhone = document.getElementById("admin-phone").value.trim();
+            const newAddr = document.getElementById("admin-address").value.trim();
+            const newWeek = document.getElementById("admin-hours-week").value.trim();
+            const newWeekend = document.getElementById("admin-hours-weekend").value.trim();
+
+            if (newPhone) {
+                BARBER_CONFIG.whatsappNumber = newPhone.replace(/\D/g, '');
+                document.getElementById("contact-phone-display").textContent = `+${BARBER_CONFIG.whatsappNumber}`;
+                document.getElementById("hero-phone-text").textContent = `+${BARBER_CONFIG.whatsappNumber}`;
+            }
+            if (newAddr) {
+                BARBER_CONFIG.address = newAddr;
+                document.getElementById("location-address-display").textContent = `📍 ${newAddr}`;
+                document.getElementById("booking-address-text").textContent = newAddr;
+            }
+            if (newWeek) {
+                BARBER_CONFIG.hoursWeek = newWeek;
+                document.getElementById("hours-week-display").textContent = newWeek;
+            }
+            if (newWeekend) {
+                BARBER_CONFIG.hoursWeekend = newWeekend;
+                document.getElementById("hours-sat-display").textContent = newWeekend;
+                document.getElementById("hours-sun-display").textContent = newWeekend;
+            }
+
+            // Actualizar precios
+            document.querySelectorAll(".admin-price-input").forEach(input => {
+                const idx = parseInt(input.dataset.srvIdx, 10);
+                const val = parseInt(input.value, 10);
+                if (!isNaN(val) && SERVICES_DATA[idx]) {
+                    SERVICES_DATA[idx].price = val;
+                }
+            });
+
+            renderServices('todos');
+            populateBookingSelect();
+            generateQRCode();
+
+            const status = document.getElementById("admin-status-msg");
+            status.classList.remove("hidden");
+            setTimeout(() => status.classList.add("hidden"), 3500);
+        }
+
+        // Genera el código HTML limpio (sin la barra de dueño) para subir a GitHub
+        function getCleanHTMLForGitHub() {
+            applyAdminChanges();
+            const clone = document.documentElement.cloneNode(true);
+            const ownerBar = clone.querySelector("#owner-quick-bar");
+            if (ownerBar) ownerBar.remove();
+            const nav = clone.querySelector("#main-navbar");
+            if (nav) {
+                nav.classList.remove("top-[52px]", "sm:top-[48px]");
+                nav.classList.add("top-[5px]");
+            }
+            const adminModal = clone.querySelector("#admin-modal");
+            if (adminModal) adminModal.classList.add("hidden");
+            return "<!DOCTYPE html>\n" + clone.outerHTML;
+        }
+
+        function exportUpdatedHTML() {
+            const fullHTML = getCleanHTMLForGitHub();
+            const blob = new Blob([fullHTML], { type: "text/html;charset=utf-8" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "index.html";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function copyHTMLCodeToClipboard() {
+            const fullHTML = getCleanHTMLForGitHub();
+            const tempTextArea = document.createElement("textarea");
+            tempTextArea.value = fullHTML;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempTextArea);
+
+            const btnText = document.getElementById("copy-btn-text");
+            if (btnText) {
+                btnText.textContent = "¡Código Copiado! Pégalo en GitHub";
+                setTimeout(() => {
+                    btnText.textContent = "2. Copiar Código (Plan B)";
+                }, 4000);
+            }
+        }
+
+        // Inicialización al cargar
+        window.onload = function() {
+            const today = new Date().toISOString().split('T')[0];
+            const dateInput = document.getElementById("booking-date");
+            dateInput.value = today;
+            dateInput.min = today;
+
+            renderGallery('principales');
+            renderServices('todos');
+            populateBookingSelect();
+            generateQRCode();
+
+            // Menú móvil
+            const menuBtn = document.getElementById("mobile-menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            menuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+
+            document.querySelectorAll(".mobile-link").forEach(link => {
+                link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+            });
+        };
+    </script>
+
+</body></html>
